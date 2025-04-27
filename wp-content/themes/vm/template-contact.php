@@ -12,10 +12,8 @@ if(have_posts()): while(have_posts()): the_post(); ?>
         </div>
         <div class="contact__form">
             <?php
-
             $errors = $_SESSION['dw_contact_form_errors'] ?? [];
             unset($_SESSION['dw_contact_form_errors']);
-
             $success = $_SESSION['dw_contact_form_success'] ?? false;
             unset($_SESSION['dw_contact_form_success']);
             if($success): ?>

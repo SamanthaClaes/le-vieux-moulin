@@ -20,17 +20,28 @@
                     </svg>
                 </a>
                 <div class="menu_links">
-                    <div class="menu_links">
-                        <input type="checkbox" id="dropdown-toggle" class="input_container">
-                        <label for="dropdown-toggle" class="input_container">Nos maisons</label>
-                        <div class="nav_main_menu">
-                            <?php $links = dw_get_navigation_links('header');?>
-                            <?php foreach ($links as $link): ?>
+                    <!-- Le parent cliquable -->
+                    <?php
+                    // On récupère tous les liens de navigation
+                    $links = dw_get_navigation_links('header');
+                    // On suppose que le premier lien dans le tableau est le parent
+                    $parent_link = $links[0] ?? null;
+                    ?>
+                    <!-- Affichage du parent uniquement une fois -->
+                    <?php if ($parent_link): ?>
+                        <a href="<?= esc_url($parent_link->href) ?>" class="menu-parent">
+                            <?= esc_html($parent_link->label) ?>
+                        </a>
+                    <?php endif; ?>
+                    <!-- Les sous-liens seulement (en excluant le parent) -->
+                    <div class="nav_main_menu">
+                        <?php foreach ($links as $link): ?>
+                            <?php if ($link !== $parent_link): ?> <!-- Ne pas afficher à nouveau le parent -->
                                 <a href="<?= esc_url($link->href) ?>">
                                     <?= esc_html($link->label) ?>
                                 </a>
-                            <?php endforeach; ?>
-                        </div>
+                            <?php endif; ?>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </nav>

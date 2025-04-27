@@ -100,15 +100,7 @@ class ContactForm
 
     protected function check_no_test(string $field, mixed $value): bool|string
     {
-        if(! is_string($value)) {
-            return true;
-        }
-
-        if(strpos($value, 'test') === false) {
-            return true;
-        }
-
-        return 'Ce champ ne peut pas contenir le mot "test".';
+        return !is_string($value);
     }
 
     protected function cleanData(array $data): array

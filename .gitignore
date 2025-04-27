@@ -1,1 +1,10 @@
+*
+!.gitignore
+!wp-content/
+wp-content/*
+!wp-content/themes
+wp-content/themes/*
+!wp-content/themes/vm
+!wp-content/themes/vm/*
+!wp-content/themes/vm/*/*
 .idea

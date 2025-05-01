@@ -44,7 +44,7 @@ class ContactForm
 
         // Envoyer un mail de notification.
         wp_mail(
-            to: 'toon@whitecube.be',
+            to: '',
             subject: 'Nouveau message "'.$data['subject'].'"',
             message: $this->generateMailContent($data),
         );

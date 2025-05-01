@@ -3,7 +3,13 @@
 
 
 <?php get_header(); ?>
-
+<div class="background">
+    <span class="circle circle-1"></span>
+    <span class="circle circle-2"></span>
+    <span class="circle circle-3"></span>
+    <span class="circle circle-4"></span>
+    <span class="circle circle-5"></span>
+</div>
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
@@ -30,6 +36,8 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             </div>
         </div>
     </figure>
+
+
     <section class="section-projets">
         <h2 class="section_item">Mes projets récents</h2>
 
@@ -54,7 +62,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
                         garder un lien propre (accessibilité), rajouter du contenu utile
                         (référençabilité) tout en gardant un design attractif. */ ?>
 
-                    <div class="div__card__container">
+                    <div class="div__actu__container">
                             <h3 class="__header__item"><?= $title ?></h3>
                         <?= responsive_image($image, ['classes' => 'actu_fig', 'lazy' => true]) ?>
                     </div>

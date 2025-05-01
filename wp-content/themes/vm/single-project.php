@@ -3,6 +3,9 @@
 <?php include ('templates/content/stage/stage.php') ?>
 <?php include ('templates/content/flexible.php') ?>
 
+
+
+
     <div class="__div_item_project">
         <?php
         $projects = new WP_Query([

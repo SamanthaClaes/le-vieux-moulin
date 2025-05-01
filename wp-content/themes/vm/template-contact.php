@@ -5,7 +5,6 @@
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
 if(have_posts()): while(have_posts()): the_post(); ?>
-
     <section class="contact">
         <div class="contact__content">
             <?php the_content(); ?>

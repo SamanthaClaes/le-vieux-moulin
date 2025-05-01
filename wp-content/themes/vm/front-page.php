@@ -3,6 +3,7 @@
 
 
 <?php get_header(); ?>
+<div class="main_content">
 <div class="background">
     <span class="circle circle-1"></span>
     <span class="circle circle-2"></span>
@@ -10,6 +11,7 @@
     <span class="circle circle-4"></span>
     <span class="circle circle-5"></span>
 </div>
+
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
@@ -75,6 +77,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
         </div>
     </section>
+</div>
 
 
 

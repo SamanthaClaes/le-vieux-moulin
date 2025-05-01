@@ -10,6 +10,12 @@
     <span class="circle circle-3"></span>
     <span class="circle circle-4"></span>
     <span class="circle circle-5"></span>
+    <span class="circle circle-6"></span>
+    <span class="circle circle-7"></span>
+    <span class="circle circle-8"></span>
+    <span class="circle circle-9"></span>
+    <span class="circle circle-10"></span>
+    <span class="circle circle-11"></span>
 </div>
 
 <?php
@@ -30,11 +36,12 @@ if (have_posts()): while (have_posts()): the_post(); ?>
             <div class="div_item">
                 <?php
                 $links = dw_get_navigation_links('main');
-                foreach ($links as $link): ?>
-                    <a class="button_main_menu" href="<?= esc_url($link->href) ?>">
+                foreach ($links as $i => $link): ?>
+                    <a class="btn-two btn-<?= $i ?>" href="<?= esc_url($link->href) ?>">
                         <?= esc_html($link->label) ?>
                     </a>
                 <?php endforeach; ?>
+
             </div>
         </div>
     </figure>

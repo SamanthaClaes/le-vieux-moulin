@@ -1,4 +1,15 @@
 <?php get_header(); ?>
+    <div class="main_content_house">
+    <div class="background_house">
+        <span class="circle circle-1-house"></span>
+        <span class="circle circle-2-house"></span>
+        <span class="circle circle-3-house"></span>
+        <span class="circle circle-4-house"></span>
+        <span class="circle circle-5-house"></span>
+        <span class="circle circle-6-house"></span>
+        <span class="circle circle-7-house"></span>
+    </div>
+    <div class="wrapper">
 <?php /* Template Name: Template "Contact" */ ?>
     <h2 class="title_h2">Me contacter</h2>
 <?php
@@ -69,8 +80,9 @@ if(have_posts()): while(have_posts()): the_post(); ?>
         <div class="coord_wrapper">
         <section class="coord">
            <h2>Mes coordonnées</h2>
-            <span></span>
-            <span></span>
+            <span> Mail : srglevieuxmoulin@levm.be</span>
+            <span>Téléphone : 063 / 60.11.50</span>
+
         </section>
         </div>
     </section>
@@ -81,4 +93,6 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 endwhile; else: ?>
     <p>Pas de contenu à afficher.</p>
 <?php endif; ?>
+    </div>
+    </div>
 <?php get_footer(); ?>

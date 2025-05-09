@@ -256,9 +256,9 @@ function responsive_image($image, $settings): bool|string
 
 // Récupération des URLS et attributs pour l'image en taille "full"
 // Wordpress génère automatiquement un srcset basé sur les tailles existantes
-    $src = wp_get_attachment_image_url($image_id, 'medium');
-    $srcset = wp_get_attachment_image_srcset($image_id, 'medium');
-    $sizes = wp_get_attachment_image_sizes($image_id, 'medium');
+    $src = wp_get_attachment_image_url($image_id, 'full');
+    $srcset = wp_get_attachment_image_srcset($image_id, 'full');
+    $sizes = wp_get_attachment_image_sizes($image_id, 'full');
 
 // Gestion de l'attribut de chargement "lazy" ou "eager" selon les paramètres.
     $lazy = $settings['lazy'] ?? 'eager';

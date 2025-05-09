@@ -3,8 +3,8 @@
 
 
 <?php get_header(); ?>
-<div class="main_content">
-<div class="background">
+<div class="main_content_front">
+<div class="background_front">
     <span class="circle circle-1"></span>
     <span class="circle circle-2"></span>
     <span class="circle circle-3"></span>
@@ -30,7 +30,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         <?php endif; ?>
     </section>
     <figure class="img_container">
-        <?= get_the_post_thumbnail(null, 'medium', ['class' => 'front_img'])?>
+        <?= get_the_post_thumbnail(null, 'full', ['class' => 'front_img'])?>
 
         <div class="__container_button">
             <div class="div_item">
@@ -47,8 +47,8 @@ if (have_posts()): while (have_posts()): the_post(); ?>
     </figure>
 
 
-    <section class="section-projets">
-        <h2 class="section_item">Mes projets récents</h2>
+    <section class="section-actu">
+        <h2 class="section_item">Découvrez nos actualités/projets</h2>
 
         <div class="__div_item_actu">
             <?php
@@ -66,17 +66,18 @@ if (have_posts()): while (have_posts()): the_post(); ?>
                 $permalink = get_the_permalink();
                 ?>
 
-                <article class="actu">
-                    <?php /* Le "a" est en dehors de la carte "story__card" afin de pouvoir
-                        garder un lien propre (accessibilité), rajouter du contenu utile
-                        (référençabilité) tout en gardant un design attractif. */ ?>
+                <article class="card-actu">
+                    <?php /* Le "a" est en dehors de la carte pour accessibilité + SEO + design. */ ?>
+                    <a href="<?= $permalink; ?>" class="card-actu__link">
+                        <span class="sro"><?= __hepl('Accéder à ce projet') ?></span>
+                    </a>
 
-                    <div class="div__actu__container">
-                            <h3 class="__header__item"><?= $title ?></h3>
-                        <?= responsive_image($image, ['classes' => 'actu_fig', 'lazy' => true]) ?>
+                    <div class="card-actu__content">
+                        <h3 class="card-actu__title"><?= $title ?></h3>
+                        <?= responsive_image($image, ['classes' => 'actu_img', 'lazy' => true]) ?>
                     </div>
-
                 </article>
+
 
             <?php endwhile; else: ?>
                 <p>Je n'ai aucun projet a vous montrer.</p>

@@ -261,7 +261,8 @@ function responsive_image($image, $settings): bool|string
     $sizes = wp_get_attachment_image_sizes($image_id, 'full');
 
 // Gestion de l'attribut de chargement "lazy" ou "eager" selon les paramètres.
-    $lazy = $settings['lazy'] ?? 'eager';
+    $loading = ($settings['lazy'] ?? false) === 'lazy' ? 'lazy' : 'eager';
+
 
 // Gestion des classes (si des classes sont fournies dans $settings).
     $classes = '';
@@ -277,7 +278,7 @@ function responsive_image($image, $settings): bool|string
         <img
             src="<?= esc_url($src) ?>"
             alt="<?= esc_attr($alt) ?>"
-            loading="<?= esc_attr($lazy) ?>"
+            loading="<?= esc_attr($loading) ?>"
             srcset="<?= esc_attr($srcset) ?>"
             sizes="<?= esc_attr($sizes) ?>"
             class="<?= esc_attr($classes) ?>">

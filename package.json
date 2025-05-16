@@ -1,0 +1,36 @@
+{
+  "name": "wordpress-201",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "watch": "chokidar 'wp-content/themes/vm/resources/js/app/**/*.js' 'wp-content/themes/vm/resources/css/**/*' -c 'vite build'",
+    "serve": "browser-sync start --proxy 'http://le-vieux-moulin.test' --files 'wp-content/themes/vm/public/**/*' --no-https --port 8000"
+  },
+  "keywords": [],
+  "author": "Claes Samantha ",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "browser-sync": "^3.0.3",
+    "chokidar-cli": "^3.0.0",
+    "glob": "^11.0.1",
+    "postcss": "^8.5.3",
+    "sass": "^1.86.0",
+    "vite": "^6.2.2"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "iOS >= 10",
+    "IE 11",
+    "not IE 10",
+    "Firefox ESR",
+    "Chrome >= 50",
+    "Android >= 4.4",
+    "Safari >= 9"
+  ],
+  "dependencies": {
+    "fs-extra": "^11.3.0"
+  }
+}

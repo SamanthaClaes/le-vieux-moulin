@@ -1,0 +1,13 @@
+{
+  "wp-content/themes/vm/resources/css/styles.scss": {
+    "file": "assets/css-ZCGfvMbL.css",
+    "src": "wp-content/themes/vm/resources/css/styles.scss",
+    "isEntry": true
+  },
+  "wp-content/themes/vm/resources/js/main.js": {
+    "file": "assets/js-D1Hus7KK.js",
+    "name": "js",
+    "src": "wp-content/themes/vm/resources/js/main.js",
+    "isEntry": true
+  }
+}

@@ -2,11 +2,6 @@
 <footer class="bottom" role="contentinfo">
     <section class="section_container">
         <h2 class="bottom_title">Coordonnées</h2>
-        <ul class="bottom_list">
-            <li><strong>Mail</strong> : <a href="mailto:srglevieuxmoulin@levm.be">srglevieuxmoulin@levm.be</a></li>
-            <li><strong>Téléphone</strong> : <a href="tel:+3263601150">063 / 60.11.50</a></li>
-            <li><strong>Numéro de compte</strong> : BE93-7965-5262-8667</li>
-        </ul>
     </section>
     <a href="https://www.facebook.com/profile.php?id=61551842080809&locale=fr_FR"
        target="_blank"

@@ -1,0 +1,23 @@
+
+.section__title {
+  font-family: "Merriweather", sans-serif, Helvetica, Arial;
+  font-size: 1.25rem;
+  color: #37474f;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &.Dons::before {
+    content: "🤝";
+    font-size: 1.25rem;
+  }
+
+  &.dons_coord::before {
+    content: "📍";
+    font-size: 1.25rem;
+  }
+}
+
+

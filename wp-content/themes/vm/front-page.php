@@ -1,39 +1,19 @@
 <?php $stage = get_field('stage'); ?>
 <?php get_header(); ?>
-
-<div class="main_content_front">
-    <!-- Éléments décoratifs (aria-hidden pour les lecteurs d'écran) -->
-    <div class="background_front" aria-hidden="true">
-        <span class="circle circle-1"></span>
-        <span class="circle circle-2"></span>
-        <span class="circle circle-3"></span>
-        <span class="circle circle-4"></span>
-        <span class="circle circle-5"></span>
-        <span class="circle circle-6"></span>
-        <span class="circle circle-7"></span>
-        <span class="circle circle-8"></span>
-        <span class="circle circle-9"></span>
-        <span class="circle circle-10"></span>
-        <span class="circle circle-11"></span>
-    </div>
-
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <!-- Section d'introduction -->
-        <section class="section_container"
-                 aria-label="Introduction">
-            <?php if (!empty($stage['subline'])) : ?>
-                <h1 class="stage__subline"><?= esc_html($stage['subline']) ?></h1>
-            <?php endif; ?>
-        </section>
-
-        <!-- Figure avec image et navigation -->
         <figure class="img_container" aria-label="Image principale avec navigation">
             <?= get_the_post_thumbnail(null, 'full', [
                 'class' => 'front_img',
-                'alt' => get_the_title() // Texte alternatif correct
+                'alt' => get_the_title()
             ]) ?>
 
             <div class="__container_button">
+                <section class="section_container"
+                         aria-label="Introduction">
+                    <?php if (!empty($stage['subline'])) : ?>
+                        <h1 class="stage__subline"><?= esc_html($stage['subline']) ?></h1>
+                    <?php endif; ?>
+                </section>
                 <div class="div_item">
                     <?php
                     $links = dw_get_navigation_links('main');
@@ -46,7 +26,6 @@
             </div>
         </figure>
 
-        <!-- Section actualités -->
         <section class="section-actu" aria-label="Section actualités et projets">
             <h2 class="section_item">Découvrez nos actualités / projets</h2>
 

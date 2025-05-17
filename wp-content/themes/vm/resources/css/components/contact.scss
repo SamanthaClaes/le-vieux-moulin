@@ -1,0 +1,129 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f9fefc;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+}
+.form{
+  width: 100%;
+  max-width: 400px;
+}
+.contact__form,
+.coord_wrapper {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact__form {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coord_wrapper {
+  background-color: #eaffef;
+}
+
+.form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field__label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  display: block;
+  color: #1e4620;
+  font-family: "Raleway", sans-serif;
+}
+
+.field__input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccefdc;
+  border-radius: 0.5rem;
+  background-color: #f1fcf5;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+}
+
+textarea.field__input {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form__submit {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.75rem 2rem;
+  background-color: #28c36b;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: darken(#28c36b, 10%);
+  }
+}
+
+.contact__success {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.coord {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h2 {
+    font-size: 1.25rem;
+    color: #1e4620;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    &::before {
+      content: "📍";
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: "Raleway", sans-serif;
+    color: #37474f;
+    font-size: 0.95rem;
+
+    &:nth-child(2)::before {
+      content: "📧";
+    }
+
+    &:nth-child(3)::before {
+      content: "📞";
+    }
+  }
+}

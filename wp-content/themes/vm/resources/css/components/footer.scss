@@ -1,0 +1,38 @@
+.bottom {
+  font-family: "Merriweather", serif, Helvetica, Arial;
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column; // ✅ Mobile : en colonne
+  gap: 0.5rem;
+  background: #7BB274;
+  padding: 0.75rem 1.25rem;
+}
+
+.bottom_title {
+  font-family: Merriweather, serif, Helvetica, Arial;
+}
+
+.bottom_list {
+  list-style-type: none;
+  gap: 0.625rem;
+  line-height: 1.25rem;
+}
+
+.bottom_list > li::before {
+  list-style-type: none;
+  content: " ";
+}
+
+.logo_fb {
+  fill: #0f0f0f;
+  fill-rule: evenodd;
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .bottom {
+    flex-direction: row; // ✅ Desktop : en ligne
+    justify-content: space-between;
+  }
+}

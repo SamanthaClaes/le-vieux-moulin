@@ -4,9 +4,9 @@
 wp-content/*
 !wp-content/themes/
 wp-content/themes/*
-!wp-content/themes/dw
-!wp-content/themes/dw/*
-!wp-content/themes/dw/**/*
+!wp-content/themes/vm
+!wp-content/themes/vm/*
+!wp-content/themes/vm/**/*
 !vite.config.js
 !package.json
 !postcss.config.js

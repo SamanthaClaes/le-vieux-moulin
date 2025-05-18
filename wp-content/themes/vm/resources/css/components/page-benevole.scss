@@ -3,10 +3,10 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  background-color: #f0fbf5;
+  background-color: #eaffef;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  margin: 0 auto;
+  margin: 100px auto 40px;
   max-width: 700px;
 
   &__content-container {
@@ -133,8 +133,8 @@ p {
   .text-media__position--right .text-media__content {
     width: 55%;
   }
-  .text-media__content-text{
-    text-align: center;
+  .text-media__content-text {
+    text-align: left;
   }
 }
 

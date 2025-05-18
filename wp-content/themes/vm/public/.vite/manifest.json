@@ -1,6 +1,6 @@
 {
   "wp-content/themes/vm/resources/css/styles.scss": {
-    "file": "assets/css-ZCGfvMbL.css",
+    "file": "assets/css-BiHF8Hvp.css",
     "src": "wp-content/themes/vm/resources/css/styles.scss",
     "isEntry": true
   },
@@ -9,5 +9,9 @@
     "name": "js",
     "src": "wp-content/themes/vm/resources/js/main.js",
     "isEntry": true
+  },
+  "wp-content/themes/vm/resources/svg/bg.svg": {
+    "file": "assets/bg-B36KQVis.svg",
+    "src": "wp-content/themes/vm/resources/svg/bg.svg"
   }
 }

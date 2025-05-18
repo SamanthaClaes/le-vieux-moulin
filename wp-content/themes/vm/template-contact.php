@@ -73,7 +73,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
            <h2>Nos coordonnées</h2>
             <span> Mail : srglevieuxmoulin@levm.be</span>
             <span>Téléphone : 063 / 60.11.50</span>
-
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2571.2019399727715!2d5.67496707655422!3d49.87623417148825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eaa07e8fd83f07%3A0x366afd87048196be!2sLe%20Vieux%20Moulin!5e0!3m2!1sfr!2sbe!4v1747576199004!5m2!1sfr!2sbe" width="500" height="205" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
         </div>
     </section>

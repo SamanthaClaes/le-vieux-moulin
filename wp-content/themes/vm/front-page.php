@@ -34,7 +34,7 @@
                 $projects = new WP_Query([
                     'post_type' => 'actu',
                     'orderby' => 'asc',
-                    'posts_per_page' => 3,
+                    'posts_per_page' => 2,
                 ]);
 
                 if ($projects->have_posts()) :

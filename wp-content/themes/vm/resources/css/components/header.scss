@@ -1,4 +1,3 @@
-/* === HEADER === */
 .header {
   position: fixed;
   top: 0;
@@ -16,7 +15,6 @@
   gap: 1rem;
 }
 
-/* === BURGER ICON === */
 .header__toggle {
   display: none;
 }
@@ -33,11 +31,10 @@
   span {
     width: 25px;
     height: 3px;
-    background: black;
+    background: #37474f;
   }
 }
 
-/* === NAVIGATION === */
 .header__nav {
   position: absolute;
   top: 40px;
@@ -70,18 +67,19 @@
 }
 
 .header__link {
+  font-family: Merriweather, serif, Helvetica, Arial;
   display: block;
-  text-align: center;
+  text-align: left;
+  line-height: 1.5;
   padding: 10px;
-  font-size: 1.2rem;
-  color: black;
+  font-size: 1rem;
+  color: #37474f;
   text-decoration: none;
   position: relative;
   width: 100%;
   cursor: pointer;
 }
 
-/* === Sous-menu (mobile & desktop) === */
 .header__submenu {
   display: flex;
   flex-direction: column;
@@ -92,13 +90,13 @@
   transition: max-height 0.3s ease, opacity 0.3s ease;
   position: relative;
   padding: 0.5rem 0 0 1rem;
-  border-left: 2px solid #ccc;
+  border-left: 2px solid #37474f;
 }
 
 .header__sublink {
   padding: 8px 0;
   text-decoration: none;
-  color: #333;
+  color: #37474f;
   display: block;
   font-size: 1rem;
 }
@@ -107,14 +105,12 @@
   display: none;
 }
 
-/* === OUVERTURE SOUS-MENU AU CLIC (mobile et desktop) === */
 .header__submenu-toggle:checked + .header__link + .header__submenu {
   display: flex;
   max-height: 500px;
   opacity: 1;
 }
 
-/* === "+" icône en mobile === */
 .header__icon-toggle {
   display: inline-block;
   margin-left: 8px;
@@ -141,9 +137,8 @@
   margin-top: 40px;
 }
 
-
 /* === DESKTOP === */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .header__burger,
   .header__toggle,
   .header__icon-toggle {
@@ -155,7 +150,7 @@
   }
 
   .header__container {
-    justify-content: space-between;
+    justify-content: space-around;
     height: 40px;
     padding: 20px;
   }
@@ -165,13 +160,12 @@
     display: flex;
     top: 0;
     width: 100%;
-    background: transparent;
     overflow: visible;
   }
 
   .header__menu {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
     gap: 10px;
@@ -188,14 +182,13 @@
     flex: 1;
     text-align: center;
     display: flex;
-    justify-content: center; /* Ajouté pour centrer le contenu */
+    justify-content: center;
   }
 
-  /* Sous-menu en absolute aligné sous le parent */
   .header__submenu {
     position: absolute;
-    left: 50%; /* Centre le sous-menu par rapport au parent */
-    transform: translateX(-50%); /* Compense la moitié de la largeur pour un centrage parfait */
+    left: 50%;
+    transform: translateX(-50%);
     top: 100%;
     min-width: 150px;
     background: #fff;
@@ -206,9 +199,8 @@
     opacity: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    z-index: 1001; /* S'assure qu'il est au-dessus des autres éléments */
+    z-index: 1001;
   }
-
 
   .header__submenu-toggle:checked + .header__link + .header__submenu {
     display: flex;

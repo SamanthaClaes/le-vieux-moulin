@@ -3,20 +3,31 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem;
-  background-color: #f9fefc;
+
+
+  .form{
+    width: 100%;
+    max-width: 200px;
+  }
 
   @media (min-width: 768px) {
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 3rem;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 3rem;
+
+
+    .form {
+      max-width: 400px;
+    }
+
+    .btn:hover {
+      background-color: darken(#7BB274, 10%);
+    }
   }
-}
-.form{
-  width: 100%;
-  max-width: 400px;
-}
-.contact__form,
+
+
+  .contact__form,
 .coord_wrapper {
   background-color: #ffffff;
   border-radius: 1rem;
@@ -63,7 +74,7 @@
 
 textarea.field__input {
   min-height: 100px;
-  resize: vertical;
+  resize: none;
 }
 
 .form__submit {
@@ -73,7 +84,7 @@ textarea.field__input {
 
 .btn {
   padding: 0.75rem 2rem;
-  background-color: #28c36b;
+  background-color:  #7bb274;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -82,13 +93,10 @@ textarea.field__input {
   cursor: pointer;
   transition: background 0.3s ease;
 
-  &:hover {
-    background-color: darken(#28c36b, 10%);
-  }
 }
 
 .contact__success {
-  color: #28a745;
+  color: #7BB274;
   font-weight: bold;
 }
 
@@ -99,7 +107,7 @@ textarea.field__input {
 
   h2 {
     font-size: 1.25rem;
-    color: #1e4620;
+    color: #37474f;
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -126,4 +134,5 @@ textarea.field__input {
       content: "📞";
     }
   }
+}
 }

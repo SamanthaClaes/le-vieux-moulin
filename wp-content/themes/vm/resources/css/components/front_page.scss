@@ -1,8 +1,11 @@
-body{
-
+body {
+  overflow-x: hidden;
+  background-image: url("/wp-content/themes/vm/resources/svg/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-
-
 
 .img_container {
   position: relative;
@@ -16,12 +19,10 @@ body{
 .section_item {
   font-size: 2rem;
   font-family: Merriweather, serif, Helvetica, Arial;
-  margin: 40px;
   text-align: center;
   line-height: 1.5;
-
+  margin-top: 80px;
 }
-
 
 .front_img {
   position: absolute;
@@ -31,9 +32,7 @@ body{
   height: 100%;
   object-fit: cover;
   z-index: 1;
-
 }
-
 
 .__container_button {
   position: absolute;
@@ -59,7 +58,6 @@ body{
   font-family: "Merriweather", serif, Helvetica, Arial;
 }
 
-
 .div_item {
   display: flex;
   flex-direction: column;
@@ -76,7 +74,7 @@ body{
 
 .btn-two {
   padding: 1rem 2rem;
-  background-color: #f0fbf5;
+  background-color: #eaffef;
   color: #37474f;
   text-decoration: none;
   border-radius: 0.5rem;
@@ -84,17 +82,15 @@ body{
   font-family: "Raleway", sans-serif;
   min-width: 200px;
   transition: transform 0.2s ease;
-
 }
 
 .card-actu {
   position: relative;
-  background-color: #f0fbf5;
+  background-color: #eaffef;
   max-width: 300px;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
   overflow: hidden;
-
 
   .card-actu__link {
     position: absolute;
@@ -124,7 +120,6 @@ body{
     object-fit: cover;
     height: auto;
     border-radius: 0.5rem;
-
   }
 }
 
@@ -140,11 +135,11 @@ body{
   white-space: nowrap;
 }
 
-
 @media (min-width: 768px) {
   .stage__subline {
     font-size: 3rem;
   }
+
   .__container_button {
     transform: translate(-50%, -100%);
   }
@@ -161,6 +156,7 @@ body{
       transform: scale(1.05);
     }
   }
+
   .__div_item_actu {
     display: flex;
     flex-wrap: wrap;
@@ -171,10 +167,16 @@ body{
     margin: 0 auto;
   }
 
+  .__div_item_actus {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+
   .card-actu {
     flex: 1 1 280px;
     max-width: 300px;
-
 
     &:hover {
       transform: scale(1.05);

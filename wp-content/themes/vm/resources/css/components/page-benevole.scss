@@ -9,8 +9,8 @@
   background-color: $background-color;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  margin: 100px auto 40px;
-  max-width: 700px;
+  margin: 6.25rem auto 2.5rem;
+  max-width: 43.75rem;
 
   &__content-container {
     display: flex;
@@ -61,10 +61,10 @@
   }
 }
 .text-media__image {
-  max-width: 300px;
+  max-width: 18.75rem;
   aspect-ratio: 1;
   object-fit: cover;
-  flex: 1 1 300px;
+  flex: 1 1 18.75rem;
   border-radius: 8px;
 }
 
@@ -142,7 +142,7 @@ p {
   }
 }
 a{
-  color: $text-colorxs;
+  color: $text-color;
 }
 
 

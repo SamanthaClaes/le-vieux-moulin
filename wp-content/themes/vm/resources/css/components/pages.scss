@@ -5,7 +5,7 @@
   grid-template-columns: 1fr;
   gap: 2rem;
   padding: 2rem 1rem;
-  max-width: 1200px;
+
   margin: 0 auto;
 }
 
@@ -19,14 +19,14 @@
 }
 
 ul {
-  font-family: Raleway, sans-serif, Helvetica, Arial;
+  font-family: $font-body;
   font-size: 1rem;
   line-height: 1.5;
 }
 
 li::before {
   content: "-";
-  margin-right: 2px;
+  margin-right: 0.125rem;
 }
 
 
@@ -95,7 +95,7 @@ li::before {
 }
 
 .section__content {
-  font-family: "Raleway", serif, Helvetica, Arial;
+  font-family:$font-body;
   font-size: 1rem;
   color: $text-color;
   margin-bottom: 1rem;
@@ -114,49 +114,49 @@ li::before {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 30px;
+  gap: 1.875rem;
   width: 100%;
   margin-top: 2rem;
 }
 
 .section__gallery-item {
   width: 100%;
-  max-width: 300px;
+  max-width: 18.75rem;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  flex: 1 1 300px;
+  border-radius:0.5rem;
+  box-shadow: 0 0.25rem 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 18.75rem;
 }
 
 .gallery_flex_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 30px;
-  margin-top: 60px;
+  gap: 1.875rem;
+  margin-top: 3.75rem;
 }
 
 .img_gallery {
   width: 100%;
-  max-width: 300px;
+  max-width: 18.75rem;
   aspect-ratio: 1;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius:0.5rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 .div_container {
-  flex: 1 1 ;
+  flex: 1 1 1 ;
   box-sizing: border-box;
-  margin-bottom: 75px;
+  margin-bottom: 4.688rem;
   display: block;
 }
 
 .div_title_img {
   font-size: 2rem;
   font-family: $font-title;
-  margin: 80px 20px;
+  margin: 5rem 1.25rem;
   text-align: center;
   line-height: 1.5;
 }
@@ -167,7 +167,7 @@ li::before {
   }
   .stage__headline {
     font-size: 2rem;
-    margin-top: 80px;
+    margin-top: 5rem;
   }
 
   .section {

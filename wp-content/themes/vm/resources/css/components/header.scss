@@ -1,7 +1,5 @@
 @use "../utils/variables" as *;
 
-
-
 .header {
   position: fixed;
   top: 0;
@@ -15,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40px;
+  height: 2.5rem;
   gap: 1rem;
 }
 
@@ -26,22 +24,22 @@
 .header__burger {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.313rem;
   cursor: pointer;
   position: absolute;
-  left: 20px;
+  left: 1.25rem;
   z-index: 1001;
 
   span {
-    width: 25px;
-    height: 3px;
-    background: #37474f;
+    width: 1.563rem;
+    height: 0.188rem;
+    background: $text-color;
   }
 }
 
 .header__nav {
   position: absolute;
-  top: 40px;
+  top: 2.5rem;
   left: 0;
   background:$header-color;
   width: 50%;
@@ -52,7 +50,7 @@
 }
 
 .header__toggle:checked ~ .header__nav {
-  height: calc(100vh - 40px);
+  height: calc(100vh - 2.5rem);
   z-index: 999;
   display: flex;
   flex-direction: column;
@@ -75,9 +73,9 @@
   display: block;
   text-align: left;
   line-height: 1.5;
-  padding: 10px;
+  padding: 0.625rem;
   font-size: 1rem;
-  color: #37474f;
+  color: $text-color;
   text-decoration: none;
   position: relative;
   width: 100%;
@@ -94,11 +92,11 @@
   transition: max-height 0.3s ease, opacity 0.3s ease;
   position: relative;
   padding: 0.5rem 0 0 1rem;
-  border-left: 2px solid $text-color;
+  border-left: 0.125rem solid $text-color;
 }
 
 .header__sublink {
-  padding: 8px 0;
+  padding: 0.5rem 0;
   text-decoration: none;
   color: $text-color;
   display: block;
@@ -111,13 +109,13 @@
 
 .header__submenu-toggle:checked + .header__link + .header__submenu {
   display: flex;
-  max-height: 500px;
+  max-height: 31.25rem;
   opacity: 1;
 }
 
 .header__icon-toggle {
   display: inline-block;
-  margin-left: 8px;
+  margin-left: 0.5rem;
   font-size: 1.2rem;
   font-weight: bold;
   transition: transform 0.3s ease;
@@ -130,14 +128,14 @@
 
 .header__link--has-submenu::after {
   content: " ▼";
-  font-size: 0.6em;
+  font-size: 0.6rem;
   margin-left: 5px;
   display: none;
   vertical-align: middle;
 }
 
 .site__container {
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
 
@@ -154,8 +152,8 @@
 
   .header__container {
     justify-content: space-around;
-    height: 40px;
-    padding: 20px;
+    height: 2.5rem;
+    padding: 1.25rem;
   }
 
   .header__nav {
@@ -171,12 +169,12 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    gap: 10px;
+    gap: 0.625rem;
     flex: 1;
   }
 
   .header__link {
-    padding: 8px 12px;
+    padding: 0.5rem 0.75rem;
     font-size: 1rem;
   }
 
@@ -193,11 +191,11 @@
     left: 50%;
     transform: translateX(-50%);
     top: 100%;
-    min-width: 150px;
+    min-width: 9.375rem;
     background: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 5px 0;
+    border: 0.063rem solid #ddd;
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.1);
+    padding: 0.313rem 0;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -207,7 +205,7 @@
 
   .header__submenu-toggle:checked + .header__link + .header__submenu {
     display: flex;
-    max-height: 500px;
+    max-height: 31.25rem;
     opacity: 1;
   }
 

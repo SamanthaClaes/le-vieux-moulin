@@ -1,17 +1,19 @@
+@use "../utils/variables" as *;
+
 .bottom {
-  font-family: "Merriweather", serif, Helvetica, Arial;
+  font-family: $font-title;
   font-size: 0.875rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  background: #7BB274;
+  background: $header-color;
   padding: 0.75rem 1.25rem;
 }
 span{
   display: block;
 }
 .bottom_title {
-  font-family: Merriweather, serif, Helvetica, Arial;
+  font-family:$font-title;
 }
 .section_container{
   text-align: center;

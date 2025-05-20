@@ -1,3 +1,6 @@
+@use "../utils/variables" as *;
+
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -22,7 +25,7 @@
     }
 
     .btn:hover {
-      background-color: darken(#7BB274, 10%);
+      background-color: ($header-color, 10%);
     }
   }
 
@@ -45,7 +48,7 @@
 }
 
 .coord_wrapper {
-  background-color: #eaffef;
+  background-color:$background-color;
 }
 
 .form__fields {
@@ -59,7 +62,7 @@
   margin-bottom: 0.25rem;
   display: block;
   color: #1e4620;
-  font-family: "Raleway", sans-serif;
+  font-family:$font-body;
 }
 
 .field__input {
@@ -68,7 +71,7 @@
   border: 1px solid #ccefdc;
   border-radius: 0.5rem;
   background-color: #f1fcf5;
-  font-family: "Raleway", sans-serif;
+  font-family:$font-body;
   font-size: 1rem;
 }
 
@@ -84,7 +87,7 @@ textarea.field__input {
 
 .btn {
   padding: 0.75rem 2rem;
-  background-color:  #7bb274;
+  background-color:  $header-color;
   color: white;
   font-size: 1rem;
   font-weight: 600;
@@ -96,7 +99,7 @@ textarea.field__input {
 }
 
 .contact__success {
-  color: #7BB274;
+  color: $header-color;
   font-weight: bold;
 }
 
@@ -122,7 +125,7 @@ textarea.field__input {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-family: "Raleway", sans-serif;
+    font-family: $font-body;
     color: #37474f;
     font-size: 0.95rem;
 

@@ -1,3 +1,5 @@
+@use "../utils/variables" as *;
+
 body {
   overflow-x: hidden;
   background-image: url("/wp-content/themes/vm/resources/svg/bg.svg");
@@ -18,7 +20,7 @@ body {
 
 .section_item {
   font-size: 2rem;
-  font-family: Merriweather, serif, Helvetica, Arial;
+  font-family: $font-title;
   text-align: center;
   line-height: 1.5;
   margin-top: 80px;
@@ -51,11 +53,11 @@ body {
 
 .stage__subline {
   font-size: 2rem;
-  color: black;
+  color: $text-color;
   margin: 0;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: "Merriweather", serif, Helvetica, Arial;
+  font-family: $font-body;
 }
 
 .div_item {
@@ -74,19 +76,19 @@ body {
 
 .btn-two {
   padding: 1rem 2rem;
-  background-color: #eaffef;
-  color: #37474f;
+  background-color: $background-color;
+  color:$text-color;
   text-decoration: none;
   border-radius: 0.5rem;
   font-size: 1.25rem;
-  font-family: "Raleway", sans-serif;
+  font-family:$font-body;
   min-width: 200px;
   transition: transform 0.2s ease;
 }
 
 .card-actu {
   position: relative;
-  background-color: #eaffef;
+  background-color: $background-color;
   max-width: 300px;
   border-radius: 1rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
@@ -108,10 +110,10 @@ body {
   }
 
   .card-actu__title {
-    font-family: "Merriweather", serif;
+    font-family: $font-body;
     margin-bottom: 1rem;
     font-size: 1rem;
-    color: #37474f;
+    color: $text-color;
   }
 
   .actu_img {

@@ -1,10 +1,14 @@
+@use "../utils/variables" as *;
+
+
+
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: #7BB274;
+  background: $header-color;
 }
 
 .header__container {
@@ -39,7 +43,7 @@
   position: absolute;
   top: 40px;
   left: 0;
-  background: #7BB274;
+  background:$header-color;
   width: 50%;
   height: 0;
   z-index: 0;
@@ -67,7 +71,7 @@
 }
 
 .header__link {
-  font-family: Merriweather, serif, Helvetica, Arial;
+  font-family: $font-title;
   display: block;
   text-align: left;
   line-height: 1.5;
@@ -90,13 +94,13 @@
   transition: max-height 0.3s ease, opacity 0.3s ease;
   position: relative;
   padding: 0.5rem 0 0 1rem;
-  border-left: 2px solid #37474f;
+  border-left: 2px solid $text-color;
 }
 
 .header__sublink {
   padding: 8px 0;
   text-decoration: none;
-  color: #37474f;
+  color: $text-color;
   display: block;
   font-size: 1rem;
 }
@@ -120,10 +124,10 @@
 }
 
 .header__submenu-toggle:checked + .header__link .header__icon-toggle {
-  transform: rotate(45deg); // Le "+" devient un "×"
+  transform: rotate(45deg);
 }
 
-/* === Chevron "▼" visible uniquement sur desktop === */
+
 .header__link--has-submenu::after {
   content: " ▼";
   font-size: 0.6em;
@@ -132,12 +136,11 @@
   vertical-align: middle;
 }
 
-/* === SITE MARGIN === */
 .site__container {
   margin-top: 40px;
 }
 
-/* === DESKTOP === */
+
 @media (min-width: 768px) {
   .header__burger,
   .header__toggle,

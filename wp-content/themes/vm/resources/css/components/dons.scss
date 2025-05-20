@@ -1,8 +1,9 @@
+@use "../utils/variables" as *;
 
 .section__title {
-  font-family: "Merriweather", sans-serif, Helvetica, Arial;
+  font-family: $font-title;
   font-size: 1.25rem;
-  color: #37474f;
+  color:$text-color;
   font-weight: 700;
   margin-bottom: 1rem;
   display: flex;

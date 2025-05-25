@@ -2,7 +2,7 @@
 <?php /* template Name: Template actualités */ ?>
 
 <section class="section-actu" aria-label="Section actualités et projets">
-    <h2 class="section_item">Découvrez nos actualités / projets</h2>
+    <h2 class="news__title">Découvrez nos actualités / projets</h2>
 
     <div class="__div_item_actus">
         <?php
@@ -21,7 +21,7 @@
                 $permalink = get_the_permalink();
                 ?>
                 <!-- Article individuel -->
-                <article class="card-actu" aria-labelledby="card-title-<?= get_the_ID(); ?>">
+                <article class="card-actu__image" aria-labelledby="card-title-<?= get_the_ID(); ?>">
                     <a href="<?= esc_url($permalink); ?>"
                        class="card-actu__link"
                        aria-label="Voir le projet : <?= esc_attr($title) ?>">

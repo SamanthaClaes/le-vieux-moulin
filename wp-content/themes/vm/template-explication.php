@@ -1,8 +1,7 @@
-<body class="body_projects">
+
 <?php get_header(); ?>
 <?php /* template Name: Template "template-explication" */ ?>
     <div class="wrapper">
-        <?php include('templates/content/stage/stage.php') ?>
         <?php include('templates/content/flexible.php') ?>
 
         <?php
@@ -15,7 +14,7 @@
             <p>Pas de contenu à afficher.</p>
         <?php endif; ?>
     </div>
-</div>
+
 
 <?php get_footer(); ?>
-</body>
+

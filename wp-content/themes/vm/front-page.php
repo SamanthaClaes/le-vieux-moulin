@@ -1,20 +1,20 @@
 <?php $stage = get_field('stage'); ?>
 <?php get_header(); ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <figure class="img_container" aria-label="Image principale avec navigation">
+        <figure class="stage__image-container" aria-label="Image principale avec navigation">
             <?= get_the_post_thumbnail(null, 'full', [
                 'class' => 'front_img',
                 'alt' => get_the_title()
             ]) ?>
 
-            <div class="__container_button">
-                <section class="section_container"
+            <div class="stage__button-group">
+                <section class="footer__section"
                          aria-label="Introduction">
                     <?php if (!empty($stage['subline'])) : ?>
-                        <h1 class="stage__subline"><?= esc_html($stage['subline']) ?></h1>
+                        <h2 class="stage__subline"><?= esc_html($stage['subline']) ?></h2>
                     <?php endif; ?>
                 </section>
-                <div class="div_item">
+                <div class="stage__button-wrapper">
                     <?php
                     $links = dw_get_navigation_links('main');
                     foreach ($links as $i => $link) : ?>
@@ -26,10 +26,10 @@
             </div>
         </figure>
 
-        <section class="section-actu" aria-label="Section actualités et projets">
-            <h2 class="section_item">Découvrez nos actualités / projets</h2>
+        <section class="news" aria-label="Section actualités et projets">
+            <h2 class="news__title">Découvrez nos actualités / projets</h2>
 
-            <div class="__div_item_actu">
+            <div class="news__list">
                 <?php
                 $projects = new WP_Query([
                     'post_type' => 'actu',
@@ -46,7 +46,7 @@
                         $permalink = get_the_permalink();
                         ?>
                         <!-- Article individuel -->
-                        <article class="card-actu" aria-labelledby="card-title-<?= get_the_ID(); ?>">
+                        <article class="card-actu__image" aria-labelledby="card-title-<?= get_the_ID(); ?>">
                             <a href="<?= esc_url($permalink); ?>"
                                class="card-actu__link"
                                aria-label="Voir le projet : <?= esc_attr($title) ?>">
@@ -74,6 +74,5 @@
     else : ?>
         <p>Pas de contenu à afficher.</p>
     <?php endif; ?>
-</div>
 
 <?php get_footer(); ?>

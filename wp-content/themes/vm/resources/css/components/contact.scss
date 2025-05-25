@@ -12,6 +12,9 @@
     width: 100%;
     max-width: 12.5rem;
   }
+  iframe{
+    width: 100%;
+  }
 
   @media (min-width: 768px) {
     flex-direction: row;

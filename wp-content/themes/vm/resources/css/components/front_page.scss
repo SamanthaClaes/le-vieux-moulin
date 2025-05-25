@@ -9,7 +9,7 @@ body {
   background-attachment: fixed;
 }
 
-.img_container {
+.stage__image-container {
   position: relative;
   width: 100%;
   height: 70vh;
@@ -18,7 +18,7 @@ body {
   z-index: 0;
 }
 
-.section_item {
+.news__title {
   font-size: 2rem;
   font-family: $font-title;
   text-align: center;
@@ -86,7 +86,7 @@ body {
   transition: transform 0.2s ease;
 }
 
-.card-actu {
+.card-actu__image {
   position: relative;
   background-color: $background-color;
   max-width: 18.75rem;
@@ -175,7 +175,7 @@ body {
     gap: 1.25rem;
   }
 
-  .card-actu {
+  .card-actu__image {
     flex: 1 1 17.5rem;
     max-width: 18.75rem;
 

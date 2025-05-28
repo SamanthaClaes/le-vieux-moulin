@@ -26,7 +26,7 @@
                 </svg>
             </a>
 
-            <input type="checkbox" id="menu-toggle" class="header__toggle" aria-label="Ouvrir ou fermer le menu principal"/>
+            <input type="checkbox" id="menu-toggle" class="header__toggle" aria-label="Ouvrir ou fermer  le menu principal"/>
             <label for="menu-toggle" class="header__burger">
                 <span class="sro">Ouvrir ou fermer le menu</span>
                 <span></span>

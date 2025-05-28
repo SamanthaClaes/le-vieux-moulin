@@ -8,10 +8,10 @@
             ]) ?>
 
             <div class="stage__button-group">
-                <section class="footer__section"
+                <section class="stage__section"
                          aria-label="Introduction">
                     <?php if (!empty($stage['subline'])) : ?>
-                        <h2 class="stage__subline"><?= esc_html($stage['subline']) ?></h2>
+                        <h1 class="stage__subline"><?= esc_html($stage['subline']) ?></h1>
                     <?php endif; ?>
                 </section>
                 <div class="stage__button-wrapper">
@@ -74,5 +74,6 @@
     else : ?>
         <p>Pas de contenu à afficher.</p>
     <?php endif; ?>
+</div>
 
 <?php get_footer(); ?>

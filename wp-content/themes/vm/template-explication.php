@@ -1,5 +1,6 @@
 
 <?php get_header(); ?>
+        <?php include('templates/content/stage/stage.php') ?>
 <?php /* template Name: Template "template-explication" */ ?>
     <div class="wrapper">
         <?php include('templates/content/flexible.php') ?>

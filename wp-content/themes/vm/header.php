@@ -17,7 +17,7 @@
 <div class="site__container">
     <header class="header">
         <div class="header__container">
-            <a href="http://le-vieux-moulin.test/" aria-label="Accueil - Le Vieux Moulin">
+            <a href="<?= esc_url(home_url('/')); ?>" aria-label="Accueil - Le Vieux Moulin">
                 <!-- logo -->
                 <svg id="Calque_3" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 318 300">
                     <rect class="st2" x="222.3" y="133.6" width="3.1" height="9.4" transform="translate(124.7 -105.4) rotate(36.1)"/>

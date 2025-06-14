@@ -28,7 +28,7 @@
     }
 
     .btn:hover {
-      background-color: ($header-color, 10%);
+      background-color: darken($header-color, 10%);
     }
   }
 

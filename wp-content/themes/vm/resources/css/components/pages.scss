@@ -14,7 +14,7 @@
   color: $text-color;
   font-size: 1.5rem;
   line-height: 1.5;
-  padding: 1rem;
+  padding-top: 5rem;
   text-align: center;
 }
 
@@ -156,6 +156,8 @@ li::before {
 .div_title_img {
   font-size: 2rem;
   font-family: $font-title;
+  color: $text-color;
+  text-transform: uppercase;
   margin: 5rem 1.25rem;
   text-align: center;
   line-height: 1.5;

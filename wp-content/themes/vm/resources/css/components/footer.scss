@@ -38,10 +38,12 @@ span{
 }
 
 .footer__icon {
-  fill: $text-color;
   fill-rule: evenodd;
   width: 1.875rem;
   height: 1.875rem;
+}
+.st0{
+  fill: $text-color;
 }
 
 @media (min-width: 768px) {

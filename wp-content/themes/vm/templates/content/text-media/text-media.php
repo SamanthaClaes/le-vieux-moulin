@@ -3,6 +3,7 @@
 <?php $subline = get_sub_field('subline') ?>
 <?php $text = get_sub_field('text') ?>
 <?php $cta = get_sub_field('cta') ?>
+<?php $cta2 = get_sub_field('cta_copier') ?>
 <?php $image = get_sub_field('image') ?>
 <?php $media_position = get_sub_field('media_position') ?>
 <?php $media_type = get_sub_field('media_type') ?>
@@ -35,6 +36,14 @@
                    href="<?= $cta['url'] ?>"
                    title="<?= $cta['title'] ?>">
                     <?= $cta['title'] ?>
+                </a>
+            <?php endif; ?>
+
+            <?php if (!empty($cta2)): ?>
+                <a class="text-media__content-link"
+                   href="<?= $cta2['url'] ?>"
+                   title="<?= $cta2['title'] ?>">
+                    <?= $cta2['title'] ?>
                 </a>
             <?php endif; ?>
         </div>

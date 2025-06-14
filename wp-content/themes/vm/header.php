@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="description" content="Site du Vieux Moulin ASBL"/>
     <meta name="author" content="Le Vieux Moulin"/>
-    <meta name="robots" content="index, follow"/>
     <title><?= wp_title('·', false, 'right') . get_bloginfo('name') ?></title>
     <link rel="stylesheet" type="text/css" href="<?= dw_asset('css'); ?>">
     <script src="<?= dw_asset('js') ?>" defer></script>
@@ -19,7 +18,7 @@
         <div class="header__container">
             <a href="<?= esc_url(home_url('/')); ?>" aria-label="Accueil - Le Vieux Moulin">
                 <!-- logo -->
-                <svg id="Calque_3" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 318 300" width="75" height="75">
+                <svg id="logo" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 318 300" width="80" height="80">
                     <rect class="st2" x="222.3" y="133.6" width="3.1" height="9.4" transform="translate(124.7 -105.4) rotate(36.1)"/>
                     <g>
                         <polygon class="st1" points="39.2 195.3 60.6 195.3 72.3 81.1 119.4 186.6 134.1 184.4 183.1 78.9 192.9 195.3 226.8 195.3 206.8 21.1 189.2 21.1 128.9 152.7 74.6 21.1 62.9 21.1 39.2 195.3"/>
@@ -78,8 +77,8 @@
             </a>
 
             <input type="checkbox" id="menu-toggle" class="header__toggle" aria-label="Ouvrir ou fermer  le menu principal"/>
-            <label for="menu-toggle" class="header__burger">
                 <span class="sro">Ouvrir ou fermer le menu</span>
+            <label for="menu-toggle" class="header__burger">
                 <span></span>
                 <span></span>
                 <span></span>

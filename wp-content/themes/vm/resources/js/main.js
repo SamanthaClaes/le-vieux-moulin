@@ -1,7 +1,6 @@
 console.log('test')
-document.addEventListener('DOMContentLoaded', () => {
-    const submenuToggles = document.querySelectorAll('.header__submenu-toggle');
 
+    const submenuToggles = document.querySelectorAll('.header__submenu-toggle');
     submenuToggles.forEach(toggle => {
         toggle.addEventListener('change', (e) => {
             if (toggle.checked) {
@@ -29,7 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const isClickInsideMenu = nav.contains(e.target) || e.target === burgerCheckbox || e.target.closest('.header__burger');
 
         if (!isClickInsideMenu && burgerCheckbox.checked) {
-            burgerCheckbox.checked = false; 
+            burgerCheckbox.checked = false; // Ferme le menu
         }
     });
-});

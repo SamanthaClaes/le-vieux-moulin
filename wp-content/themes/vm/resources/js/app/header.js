@@ -1,6 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const submenuToggles = document.querySelectorAll('.header__submenu-toggle');
 
+    const submenuToggles = document.querySelectorAll('.header__submenu-toggle');
     submenuToggles.forEach(toggle => {
         toggle.addEventListener('change', (e) => {
             if (toggle.checked) {
@@ -31,4 +30,3 @@ document.addEventListener('DOMContentLoaded', () => {
             burgerCheckbox.checked = false; // Ferme le menu
         }
     });
-});
